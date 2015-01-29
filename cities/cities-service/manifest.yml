@@ -3,5 +3,11 @@ applications:
 - name: MP-cities-service-CI
   memory: 512M
   instances: 1
+  host: MP-cities-service-CI
+  domain: 209.236.122.169.xip.io
   path: build\libs\cities-service-0.0.1-SNAPSHOT.jar
+  services:
+  - mydb
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
 

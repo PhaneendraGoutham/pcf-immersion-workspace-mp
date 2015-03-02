@@ -2,8 +2,18 @@ Overview
 ---
 
 - [O1] What are the 4 Core Tenets of Pivotal CF?
+- MP Ans
+  -Developer Agility
+  -Operator Agility
+  -IaaS Independant
+  -Broad Services Ecosystem
 
 - [O2] What are the 4 Levels of HA?
+- MP Ans 
+  -Failed VMs are recovered.
+  -Failed procees are recovered.
+  -Failed app instances are recovered
+  -App instance are managed across AZs
 
 
 Operations
@@ -24,6 +34,11 @@ Scaling the Platform
 Backing Up Pivotal CF
 
 - [O6] What critical databases need to be backed up?
+- MP Ans 
+    Cloud Controller Database
+    UAA Database
+    Apps Manager Database
+    The NFS Server
 
 
 Bosh basics & troubleshooting
@@ -33,8 +48,12 @@ Bosh basics & troubleshooting
 - [O8] How would you restart Ops Manager?
 
 - [O9] What bosh component is responsible for recreating a failed VM?
+- MP Ans 
+  Resurrector
 
 - [O10] Where did you enable the above component in Ops Manager?
+- MP Ans
+  Ops Manager Director for vSphere -> Director Config -> Enable VM Resurrector Plugin
 
 - [O11] In the Jenkins manifest, what stemcell is used for the jenkins master job?
 

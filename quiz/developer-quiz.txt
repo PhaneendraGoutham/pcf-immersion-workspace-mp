@@ -2,12 +2,14 @@ Developer Quiz
 ---
 
 [D1] Where should your applications write logs?
-
+MP Ans :- TO console and use syslog drain to collect logs.
 
 [D2] What command would you run to see the environment variable showing all of your services bound to an application?
+MP Ans :- cf e <app_name>
 
 
 [D3] How would you set the SPRING_PROFILES_ACTIVE environment variable from the command line?
+MP ANs :- cf set-env <app_name> SPRING_PROFILES_ACTIVE default
 
 
 [D4] What happens to an application when you scale the amount of memory? Why?

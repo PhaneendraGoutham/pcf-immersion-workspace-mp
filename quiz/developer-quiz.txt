@@ -13,9 +13,11 @@ MP ANs :- cf set-env <app_name> SPRING_PROFILES_ACTIVE default
 
 
 [D4] What happens to an application when you scale the amount of memory? Why?
+MP Ans :- Scaling the amount of memory of an application restarts application becuase we are scaling the memory of already running instance and restart needed to take effect the scaled memory. 
 
 
 [D5] What happens when you scale an application horizontally?
+MP Ans :- Horizontaly scaling the application creates new instance of application 
 
 
 [D6] If you are building a new service broker, what is the best practice when creating a new service instance binding?

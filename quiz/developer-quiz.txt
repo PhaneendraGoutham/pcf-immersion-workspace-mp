@@ -21,3 +21,4 @@ MP Ans :- Horizontaly scaling the application creates new instance of applicatio
 
 
 [D6] If you are building a new service broker, what is the best practice when creating a new service instance binding?
+MP Ans :- Each binding should be represented by its own credentials

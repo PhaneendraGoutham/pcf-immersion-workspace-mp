@@ -27,8 +27,10 @@ Installing Pivotal CF on vSphere
 Scaling the Platform
 
 - [O4] What component would you scale to add capacity to host additional application instances?
+- MP Ans :- DEA
 
 - [O5] Where in Ops Manager would you scale the above component?
+- MP Ans :- Elastic Runtime -> Resource Sizes -> DEAs 
 
 
 Backing Up Pivotal CF
@@ -44,8 +46,12 @@ Backing Up Pivotal CF
 Bosh basics & troubleshooting
 
 - [O7] What directory on the Ops Manager VM contains the Ops Manager artifacts and configuration?
+- MP Ans :- /home/tempest-web
 
 - [O8] How would you restart Ops Manager?
+- MP Ans :- SSH into the Ops Manager VM and restart Ops Mgr as below 
+            $ sudo service tempest-web stop
+            $ sudo service tempest-web start
 
 - [O9] What bosh component is responsible for recreating a failed VM?
 - MP Ans 

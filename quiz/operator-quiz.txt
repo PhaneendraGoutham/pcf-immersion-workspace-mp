@@ -22,7 +22,9 @@ Operations
 Installing Pivotal CF on vSphere
 
 - [O3] What is the preferred Network Segmentation strategy?  List each segment and describe the traffic on each.
-
+- MP Ans :- Full Network Segmentation is the preferred strategy because it provides the most security.
+            With full network segmentation, you install vCenter, the Ops Manager Director, and your products to different networks
+            to separate management, operations, and production traffic.
 
 Scaling the Platform
 
@@ -62,14 +64,21 @@ Bosh basics & troubleshooting
   Ops Manager Director for vSphere -> Director Config -> Enable VM Resurrector Plugin
 
 - [O11] In the Jenkins manifest, what stemcell is used for the jenkins master job?
+- MP Ans :- bosh-vsphere-esxi-ubuntu-trusty-go_agent
 
 - [O12] In the Jenkins manifest, what errands exist?
+- MP Ans :- jenkins_cf_bootstrap and jenkins_cf_unbootstrap
 
 - [O13] What bosh command would you use to attempt to manually scan the health and possibly recover failed VMs
+- MP Ans :- bosh cloudcheck
 
 - [O14] Assume you are unable to retrieve agent logs using the bosh command.  Explain what steps you would take to attempt to review the logs.
+- MP Ans :- 1) Use bosh ssh command to SSH into a VM 
+            2) Then look at the log files at location /var/vcap/bosh/log/ .. 
+            3) Most recent outputs can be see as $ sudo tail -f -n 200 /var/vcap/bosh/log/current
 
 
 Application Security Groups
 
 - [O15] What is the name of the default "staging-security-group"?
+-MP Ans :- 'cf staging-security-groups' will give the name of default "staging-security-group" .   
